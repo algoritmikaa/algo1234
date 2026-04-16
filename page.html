@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Алгоритмика · О школе</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="custom-cursor" id="customCursor"></div>
+  
+  <header class="header glass">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__text">Алгоритмика</span>
+        <span class="logo__tag">&lt;/&gt;</span>
+      </a>
+      
+      <button class="burger" id="burgerBtn" aria-label="Меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      
+      <nav class="nav" id="navMenu">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Главная</a></li>
+          <li><a href="courses.html" class="nav__link">Курсы</a></li>
+          <li><a href="page.html" class="nav__link active">О школе</a></li>
+        </ul>
+        <div class="header__contacts">
+          <a href="tel:+79667222244" class="contact-link"><i class="fas fa-phone-alt"></i> 8 966 722 22 44</a>
+          <a href="https://yandex.ru/maps/?text=Улица%20Умара%20Кадырова%2021" target="_blank" class="contact-link"><i class="fas fa-map-marker-alt"></i> Умара Кадырова 21</a>
+        </div>
+      </nav>
+      
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="themeToggle">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title fade-up">О школе <span class="gradient-text">Алгоритмика</span></h1>
+      </div>
+    </section>
+
+    <!-- Цитата основателя -->
+    <section class="quote-section section">
+      <div class="container">
+        <div class="quote-block glass fade-up">
+          <i class="fas fa-quote-left quote-icon"></i>
+          <p class="quote-text">Мы верим, что каждый ребёнок способен стать творцом цифрового мира. Наша задача — дать инструменты и вдохновение.</p>
+          <p class="quote-author">— Андрей Лобанов, основатель Алгоритмики</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея переворачивающихся карточек (4 шт) -->
+    <section class="gallery section">
+      <div class="container">
+        <h2 class="section-title fade-up">Как проходят занятия</h2>
+        <div class="gallery__grid">
+          <!-- Flip card 1 -->
+          <div class="flip-card fade-up delay-1">
+            <div class="flip-card__inner">
+              <div class="flip-card__front" style="background-image: url('https://placekitten.com/400/300?image=1');">
+                <span>Компьютерный класс</span>
+              </div>
+              <div class="flip-card__back glass">
+                <h4>Современное оборудование</h4>
+                <p>Каждому ученику — отдельное рабочее место с мощным ПК.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Flip card 2 -->
+          <div class="flip-card fade-up delay-2">
+            <div class="flip-card__inner">
+              <div class="flip-card__front" style="background: linear-gradient(145deg, #6C63FF, #3F3D56);">
+                <span>Групповые проекты</span>
+              </div>
+              <div class="flip-card__back glass">
+                <h4>Командная работа</h4>
+                <p>Учимся работать в команде, как в настоящих IT-компаниях.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Flip card 3 -->
+          <div class="flip-card fade-up delay-3">
+            <div class="flip-card__inner">
+              <div class="flip-card__front" style="background-image: url('https://placekitten.com/401/301?image=2');">
+                <span>Хакатоны</span>
+              </div>
+              <div class="flip-card__back glass">
+                <h4>Соревнования и призы</h4>
+                <p>Регулярные внутренние хакатоны с крутыми подарками.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Flip card 4 -->
+          <div class="flip-card fade-up delay-4">
+            <div class="flip-card__inner">
+              <div class="flip-card__front" style="background: linear-gradient(145deg, #8A7BFF, #5E5CE6);">
+                <span>Выпускной</span>
+              </div>
+              <div class="flip-card__back glass">
+                <h4>Портфолио проектов</h4>
+                <p>Каждый выпускник уходит с готовым портфолио для поступления или работы.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Карта проезда -->
+    <section class="map-section section">
+      <div class="container">
+        <h2 class="section-title fade-up">Как нас найти</h2>
+        <div class="map-wrapper glass fade-up">
+          <!-- Яндекс.Карты с меткой по адресу Умара Кадырова 21 -->
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=45.688%2C43.318&z=16&pt=45.688,43.318,pm2rdl&text=Улица%20Умара%20Кадырова%2021" width="100%" height="400" frameborder="0" allowfullscreen="true" style="border-radius: 24px;"></iframe>
+        </div>
+        <p class="map-address fade-up delay-1"><i class="fas fa-location-dot"></i> Улица Умара Кадырова 21 (ориентир — ЖК «Грозный Сити»)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <div class="container footer__inner">
+      <div class="footer__logo">
+        <span class="logo__text">Алгоритмика</span>
+        <span class="logo__tag">&lt;/&gt;</span>
+      </div>
+      <div class="footer__contacts">
+        <a href="tel:+79667222244"><i class="fas fa-phone-alt"></i> 8 966 722 22 44</a>
+        <a href="https://yandex.ru/maps/?text=Улица%20Умара%20Кадырова%2021" target="_blank"><i class="fas fa-map-marker-alt"></i> Умара Кадырова 21</a>
+      </div>
+      <div class="footer__copy">© 2026 Алгоритмика. Школа будущего.</div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      // Тема
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme === 'dark') {
+        body.classList.add('dark-theme');
+        themeToggle.checked = true;
+      } else {
+        body.classList.remove('dark-theme');
+        themeToggle.checked = false;
+      }
+      themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+          body.classList.add('dark-theme');
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.remove('dark-theme');
+          localStorage.setItem('theme', 'light');
+        }
+      });
+
+      // Бургер
+      const burger = document.getElementById('burgerBtn');
+      const nav = document.getElementById('navMenu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+
+      // Кастомный курсор
+      const cursor = document.getElementById('customCursor');
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+      document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
+      document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
+
+      // Fade-up
+      const fadeElements = document.querySelectorAll('.fade-up');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.2 });
+      fadeElements.forEach(el => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
